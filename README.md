@@ -1,2 +1,2 @@
 # Seiran Bot
-My first completely indapendant Disord bot project
+My first completely independent Disord bot project
