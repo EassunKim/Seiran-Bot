@@ -28,19 +28,19 @@ class MyView(discord.ui.View):
             return "Draw!"
         elif choice1 == "Rock":
             if choice2 == "Paper":
-                return f"{self.tagged} papers {self.author} GG!"
+                return f"{self.tagged.mention} papers {self.author.mention} GG!"
             else: 
-                return f"{self.author} rocks {self.tagged} GG!"
+                return f"{self.author.mention} rocks {self.tagged.mention} GG!"
         elif choice1 == "Paper":
             if choice2 == "Scisssors":
-                return f"{self.tagged} scissors {self.author} GG!"
+                return f"{self.tagged.mention} scissors {self.author.mention} GG!"
             else: 
-                return f"{self.author} papers {self.tagged} GG!"
+                return f"{self.author.mention} papers {self.tagged.mention} GG!"
         elif choice1 == "Scissors":
             if choice2 == "Rock":
-                return f"{self.tagged} rocks {self.author} GG!"
+                return f"{self.tagged.mention} rocks {self.author.mention} GG!"
             else: 
-                return f"{self.author} scissors {self.tagged} GG!"
+                return f"{self.author.mention} scissors {self.tagged.mention} GG!"
     
     async def ret_choice(self, interaction:discord.Interaction, choice: str):
         self.choices[interaction.user.id] = choice
@@ -91,7 +91,7 @@ class rps(commands.Cog):
 
     @rps.error
     async def rps_error(self, ctx, error):
-        if isinstance(error, commands.BadArgument):
+        if isinstance(error, commands.BadArgument) or isinstance(error, commands.MissingRequiredArgument):
             await ctx.send("use it right :3 !rps @<user>")
 
 async def setup(bot):
