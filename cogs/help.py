@@ -8,7 +8,7 @@ class help(commands.Cog):
         self.bot = bot
 
     @commands.command()
-    async def help(self, ctx, max: int = 100):
+    async def help(self, ctx):
         await ctx.send("For commands and bot info go to https://eassunkim.github.io/Seiran-Bot/")
 
 async def setup(bot):
