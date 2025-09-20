@@ -22,8 +22,6 @@ An independent discord bot project.
 - Generally more commands
     - RSVP/roll call commands for hosting discord events
     - Mini games
-        - Rock paper scissors
-        - black jack
 - User specific profiles and responses
     - Using MongoDB to store information for each user that interacts
 - Hosting bot online through Google Cloud or other similar service
