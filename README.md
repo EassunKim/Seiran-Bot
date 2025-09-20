@@ -6,6 +6,7 @@ An independent discord bot project.
 - Discord.py 
 - python dotenv
 - GitHub
+- Hosted using free plan on Render.com
 
 ## Planned future features and technologies
 - User specific profiles and responses
