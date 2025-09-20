@@ -25,6 +25,7 @@ An independent discord bot project.
 - Generally more commands
     - RSVP/roll call commands for hosting discord events
     - Mini games
+        - Rock Paper Scissors added on 9/20/2025
 - User specific profiles and responses
     - Using MongoDB to store information for each user that interacts
 - Hosting bot online through Google Cloud or other similar service
