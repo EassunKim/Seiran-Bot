@@ -1,6 +1,8 @@
 # Seiran Bot
 An independent discord bot project.
 
+[bot info] (https://eassunkim.github.io/Seiran-Bot/)
+
 <details>
 <summary> Built with</summary>
 
