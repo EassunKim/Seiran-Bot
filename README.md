@@ -1,12 +1,21 @@
 # Seiran Bot
 An independent discord bot project.
 
-## Technologies used
+<details>
+<summary> Built with</summary>
+
+### Languages and Frameworks
 - Python 3.12
 - Discord.py 
-- python dotenv
+- HTML and markdown (project page and GitHub)
+- 
+</details>
+
+### libraries
+- python-dotenv
+
+### external
 - GitHub
-- Hosted using free plan on Render.com
 
 ## Planned future features and technologies
 - User specific profiles and responses
