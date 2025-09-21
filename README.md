@@ -16,6 +16,8 @@ An independent discord bot project.
 
 ### external
 - GitHub
+    - General version control
+    - Branching for new features     
 
 </details>
 
