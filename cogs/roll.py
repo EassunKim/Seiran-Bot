@@ -7,8 +7,6 @@ class Roll(commands.Cog):
 
     @commands.command()
     async def roll(self, ctx, max: int = 100):
-        if max is None:
-            max = 100
         random_int = random.randint(1,max)
 
         #check for doubles
