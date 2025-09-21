@@ -6,18 +6,14 @@ class Flip(commands.Cog):
         self.bot = bot
 
     @commands.command()
-    async def flip(self, ctx, max: int = 100):
-        if max is None:
-            max = 100
-        random_int = random.randint(1,max)
+    async def flip(self, ctx):
+        random_int = random.randint(1,10)
 
-        #check for doubles
-        num_str = str(random_int)
-
-        if len(num_str) <= 1 or len(set(num_str)) != 1:
-            await ctx.send(f"you rolled {random_int}")
-        else:
-            await ctx.send(f"BOOM! you rolled :sparkles: {random_int} :sparkles: ")
+        if random_int % 2 == 0:
+            await ctx.send("Heads da yo")
+        else: 
+            await ctx.send("Tails da yo")
+            
 
 async def setup(bot):
     await bot.add_cog(Flip(bot))
